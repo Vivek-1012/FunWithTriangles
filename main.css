@@ -1,0 +1,14 @@
+.root{
+    --primary-light = #700B97;
+    --primary-dark =  #000000;
+}
+
+body {
+    background: yellow;
+}
+
+.navigation {
+    background: blueviolet;
+    color: white;
+    padding: 2rem;
+}

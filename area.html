@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of triangles</title>
     <link rel="stylesheet" href="./main.css">
-    <title>Is Triangle?</title>
 </head>
 <body>
     <nav class="navigation">
@@ -14,19 +14,14 @@
         <a class="btn" href="./quiz.html"> Triangle Quiz </a>
         <a class="btn" href="./main.html"> Is Triangle? </a>
     </nav>
-    <h1>Is Triangle?</h1>
-    <label for="angle1">Angle1</label>
-    <input type="number" class="angle-input" />
-    <label for="angle2">Angle2</label>
-    <input type="number" class="angle-input" />
-    <label for="angle3">Angle3</label>
-    <input type="number" class="angle-input" />
-    <button id="is-triangle-btn" >Is Triangle? </button>
-    <div id="output" ></div>
-    
-    
-
-    
+    <h1>Check Area of a Triangle</h1>
+    <div>
+        <p>Area of a triangle = 1/2(Base*Height)</p>
+        <label  for="base">Base(in cm)<input class="input base" type="number" /></label>
+        <label for="height">Height(in cm)<input class="input height" type="number" /></label>
+        <button id="CheckArea">Check Area</button>
+        <div id="outputA"></div>
+    </div>
 </body>
- <script src="./main.js"></script>
+<script src="./area.js"></script>
 </html>
