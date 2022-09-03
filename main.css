@@ -12,6 +12,7 @@ body{
     text-align: center;
     background-color: black;
     color: #5D3FD3;
+    
 
 }
 
@@ -61,3 +62,15 @@ body{
     margin-top: 1rem;
     
 }
+
+
+.container {
+
+    width: 15%;
+    margin:auto;
+    text-align: flex;
+    
+}
+
+
+
