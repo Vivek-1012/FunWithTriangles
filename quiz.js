@@ -13,8 +13,7 @@ function calculateScore() {
             score = score + 1;
         }
         index = index + 1;
-    }
-    // console.log(score);
+    }  
     outputE1.innerText = "Your score is : " + score;
 }
 
