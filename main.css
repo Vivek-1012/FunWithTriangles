@@ -1,14 +1,62 @@
 .root{
-    --primary-light = #700B97;
-    --primary-dark =  #000000;
+    --primary-color: #000000;
+    --primary2-color: #5D3FD3;
 }
 
-body {
-    background: yellow;
+h1 {
+    color: #5D3FD3
+    
+}
+
+body{
+    text-align: center;
+    background-color: black;
+    color: #5D3FD3;
+
 }
 
 .navigation {
-    background: blueviolet;
+    background-color: #5D3FD3;
     color: white;
     padding: 2rem;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    padding-right: 1.5rem;
+    font-size: large ;
+    font-style: bold;
+
+}
+
+.p {
+    color: white;
+}
+
+#output {
+    margin-top: 1rem;
+    max-width: 400px;
+    margin-left: 35%;
+    margin-right: 35%;
+    
+
+    /* border: 3px solid; */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: larger;
+}
+
+#submit-answer-btn , #CheckArea ,#is-triangle-btn , #Hypotenuse-btn {
+    margin-top: 1rem;
+    background: transparent;
+    color: #5D3FD3;
+    border-radius: 1rem;
+    border-color:  white;
+    padding: 0.5rem;
+    font-size: large;
+}
+
+#outputA {
+    margin-top: 1rem;
 }
