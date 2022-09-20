@@ -1,20 +1,37 @@
-const quizForm = document.querySelector(".quiz-form");
-const submitAnswerBtn = document.querySelector("#submit-answer-btn");
-const outputE1 = document.querySelector("#output");
+const que01 = document.querySelectorAll(".que01");
+const que02 = document.querySelectorAll(".que02");
+const que03 = document.querySelectorAll(".que03");
+const que04 = document.querySelectorAll(".que04");
+const que05 = document.querySelectorAll(".que05");
+const quizBtn = document.querySelector("#quizBtn");
+const quizOutput = document.querySelector("#output");
 
-const correctAnswer = ["90°","right angle"];
 
-function calculateScore() {
+function checkChecked(){
+
     let score = 0;
-    let index = 0;
-    const formResults = new FormData(quizForm);
-    for(let value of formResults.values()){
-        if(value === correctAnswer[index]){
-            score = score + 1;
-        }
-        index = index + 1;
-    }  
-    outputE1.innerText = "Your score is : " + score;
+    if(que01[1].checked){
+        score++
+    }
+
+    if(que02[2].checked){
+        score++
+    }
+
+    if(que03[0].checked){
+        score++
+    } 
+
+    if(que04[0].checked){
+        score++
+    }
+
+    if(que05[0].checked){
+        score++
+    }
+
+
+    quizOutput.innerText = `Your Score is ${score}`
 }
 
-submitAnswerBtn.addEventListener("click", calculateScore);
+quizBtn.addEventListener("click", checkChecked);

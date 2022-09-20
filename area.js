@@ -10,7 +10,23 @@ function calculateArea(base , height) {
 
 function triangleIs() {
     const calculation = calculateArea(Number(inputSides[0].value),Number(inputSides[1].value));
-    outPut.innerText = "Area of Triangle is " + calculation + " cm² ";
+     if(inputSides[0].value == 0 )
+    {
+        outPut.innerText = ("😓Value can't be NULL in Base input 😓")
+    }
+    else if(inputSides[0].value < 0 )
+    {
+        outPut.innerText = ("😟Value can't be Negative in Base input 😟")
+    }
+    else if(inputSides[1].value == 0 )
+    {
+        outPut.innerText = ("😓Value can't be null in Height input 😓")
+    }
+    else if(inputSides[1].value < 0 )
+    {
+        outPut.innerText = ("😟Value can't be Negative in Height input 😟")
+    }
+    else {outPut.innerText = "😃 Area of Triangle is " + calculation + " cm² 😃 ";}
     
     }
 
